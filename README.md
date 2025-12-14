@@ -170,3 +170,9 @@ We are not, however, relying on one-shot outputs being the de-facto shippable pr
 ```text
 Let's make sure that we tighten the layout. Right now, it's spread across the page. I want to make sure that it uses well-defined lines (no rounded corners), tight margins and spacing, and doesn't waste any space. Think of a system dashboard that is optimized for productivity.
 ```
+
+As you iterate, you will see that the results get better:
+
+![Updated Flask layout](./media/layout-flask.png)
+
+You can continue iterating to make the project better and fit your UI needs.
