@@ -78,7 +78,7 @@ export AZURE_OPENAI_DEPLOYMENT_NAME="chat"
 
 #### 3. Run the Agent
 
-**Option 1: Python**
+##### Option 1: Python
 
 * **Repo:** [https://github.com/paulyuk/simple-agent-af-python](https://github.com/paulyuk/simple-agent-af-python)
 
@@ -94,7 +94,7 @@ export AZURE_OPENAI_DEPLOYMENT_NAME="chat"
 
 Refer to the [project `README`](https://github.com/paulyuk/simple-agent-af-python/blob/main/README.md) for additional details.
 
-**Option 2: C# / .NET**
+##### Option 2: C# / .NET
 
 * **Repo:** [https://github.com/paulyuk/simple-agent-af](https://github.com/paulyuk/simple-agent-af)
 
@@ -131,6 +131,30 @@ The customer's tweet is: {{tweet}}
 Write a helpful response.
 ```
 
+The instructions, in this context, are the system prompt.
+
 ## Phase 3: Build the frontend
 
-With the agent available, we can now start working on a frontend that will allow us to _evaluate_ the performance of the agent.
+With the agent available, we can now start working on a frontend that will allow us to _evaluate_ the performance of the agent. For simplicity, we will be using Python, Flask, and the [starter Python project](https://github.com/paulyuk/simple-agent-af-python) as inspiration.
+
+>[!NOTE]
+>You can also use any other framework or technology stack. For the purposes of this exercise, we will be focusing on the _outcomes_ rather than the logistics of getting there.
+
+Open the sample starter Python project in Visual Studio Code. Because this is a Python project, we will need to make sure that the [Python configuration steps](#option-1-python) have been completed. We will also use **Claude Opus 4.5** model with GitHub Copilot.
+
+Open the `main.py` file (the sample agent), then open the Chat view and enter the following prompt:
+
+```text
+Using this file as inspiration, we want to build a Flask-based web frontend application that will be used to test the effectiveness of our agent. The frontend is a single-page application that has two columns:
+
+1. System prompt - this is where we will set the instructions for the agent.
+2. Tweets - you will generate 20 synthetic tweets as if they are tagging @MicrosoftHelps for support questions or complaints about Microsoft products.
+
+For the tweet column, I want every tweet to be in its own row, with a "Run" button that allows me to test the system prompt against the tweet, and then within the same row (that can expand down) provide the output from the model on the given tweet.
+
+Use ShadCN for the UI/CSS, and dark theme.
+```
+
+The more detailed the initial instructions - the better. You can, of course, use tools like [GitHub Spec Kit](https://github.com/github/spec-kit) to make this process a bit more deterministic, but it will also be a much more heavyweight process.
+
+![Defining the frontend in GitHub Copilot](./media/vs-code-steps.png)
