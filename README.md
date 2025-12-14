@@ -157,4 +157,16 @@ Use ShadCN for the UI/CSS, and dark theme.
 
 The more detailed the initial instructions - the better. You can, of course, use tools like [GitHub Spec Kit](https://github.com/github/spec-kit) to make this process a bit more deterministic, but it will also be a much more heavyweight process.
 
+You should see the progress outlined through tasks in VS Code:
+
 ![Defining the frontend in GitHub Copilot](./media/vs-code-steps.png)
+
+Here is what the example can look like after the first iteration:
+
+![Example of a one-shot support bot](./media/one-shot-support-bot.png)
+
+We are not, however, relying on one-shot outputs being the de-facto shippable prototype. We can also refine them with other prompts, such as:
+
+```text
+Let's make sure that we tighten the layout. Right now, it's spread across the page. I want to make sure that it uses well-defined lines (no rounded corners), tight margins and spacing, and doesn't waste any space. Think of a system dashboard that is optimized for productivity.
+```
