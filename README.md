@@ -1,5 +1,7 @@
 # Introduction to Vibe Coding for Microsoft Foundry Agents
 
+_This is a collaboration between [Paul Yuknewicz](https://github.com/paulyuk) and [Den Delimarsky](https://den.dev)_
+
 These are the simplest instructions for creating a project and running an AI Agent with Microsoft Foundry. The goal is to get you started as quickly as possible with a minimalist agent, along with baseline instructions to vibe code a suitable web-based frontend.
 
 ## Phase 1: Create the Project (Foundry + Azure resources needed)
