@@ -197,3 +197,11 @@ Let's now add evaluation capabilities here. Let's have an evaluation prompt for 
 Because we already have the Python infrastructure for agent configuration, GitHub Copilot will use it as a starting point to add eval capabilities.
 
 ![Example of eval capabilities](./media/eval.png)
+
+We can then further refine the UX to make it more usable:
+
+```text
+Let's make sure that the run and eval buttons are represented by icons from ShadCN and are a bit more grouped together with the eval score and eval output too - they need to have some logical grouping.
+```
+
+![Update to the implementation UX](./media/alt-implementation.png)
