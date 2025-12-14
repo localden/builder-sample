@@ -164,6 +164,14 @@ You should see the progress outlined through tasks in VS Code:
 
 ![Defining the frontend in GitHub Copilot](./media/vs-code-steps.png)
 
+When the Flask application is created, you will likely see more files created in the repo, including an `app.py` that is representative of the web app itself. You can run it with:
+
+```bash
+python app.py
+```
+
+![Running Flask](./media/flask-run.gif)
+
 Here is what the example can look like after the first iteration:
 
 ![Example of a one-shot support bot](./media/one-shot-support-bot.png)
@@ -179,3 +187,13 @@ As you iterate, you will see that the results get better:
 ![Updated Flask layout](./media/layout-flask.png)
 
 You can continue iterating to make the project better and fit your UI needs.
+
+Because we also want to make sure that we introduce evaluation capabilities, we can use teh following prompt to introduce this functionality in our web app:
+
+```text
+Let's now add evaluation capabilities here. Let's have an evaluation prompt for the assessment of a specific response. The evaluation prompt will be displayed under the system prompt we're using for the response agent. We will use our agent capabilities to use the evaluation prompt as a system prompt to assess how good the generated response is against the evaluation prompt, and assign it a score from 1 to 10.
+```
+
+Because we already have the Python infrastructure for agent configuration, GitHub Copilot will use it as a starting point to add eval capabilities.
+
+![Example of eval capabilities](./media/eval.png)
