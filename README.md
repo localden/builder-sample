@@ -26,9 +26,9 @@ These are the simplest instructions for creating a project and running an AI Age
 
 * **Resource Group:** `rg-<your-environment-name>` (e.g., `rg-vibe-agent-offsite`)
 * **Model Deployment:** Named `chat` using GPT-4.1-mini
-* **Azure AI Foundry Project:** Named `simple-agent-<unique-id>`
+* **Azure AI Foundry Project:** Named `<your-environment-name><unique-id>` (e.g. vibe-agent-12345)
 
-Go to [Foundry Portal](https://ai.azure.com) and look for your project starting with **simple-agent** (view All Resources if needed). Alternatively, look for the resource group mentioned above to find all the relevant resources.
+Go to [Foundry Portal](https://ai.azure.com) and look for your project starting with **vibe** (view **All Resources** if needed). Alternatively, look for the resource group mentioned above to find all the relevant resources.
 
 ## Phase 2: Build the Agent
 
