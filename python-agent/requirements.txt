@@ -1,3 +1,0 @@
-openai
-azure-identity
-agent-framework
