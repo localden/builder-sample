@@ -80,6 +80,9 @@ export AZURE_OPENAI_DEPLOYMENT_NAME="chat"
 
 ##### Option 1: Python
 
+>[!NOTE]
+>We recommend using this project, as the next step ([building the frontend](#phase-3-build-the-frontend)) will rely on the Python implementation. You can use other projects/languages as you see fit.
+
 * **Repo:** [https://github.com/paulyuk/simple-agent-af-python](https://github.com/paulyuk/simple-agent-af-python)
 
 1. Clone the repository.
