@@ -16,6 +16,12 @@ These are the simplest instructions for creating a project and running an AI Age
 3. **Configure:**
    * **Region:** Select **East US 2** (or your preferred region)
    * **Environment Name:** Enter `vibe-agent-offsite` (or your preferred name)
+   * **principalID:** enter the result of the following CLI command so your User identity gets RBAC roles/permissions needed (portal limitation)
+
+    ```bash
+    az ad signed-in-user show --query id -o tsv
+    ```
+
 4. **Deploy:** Click **Review + Create**, then **Create**
 
 >[!IMPORTANT]
