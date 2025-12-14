@@ -84,8 +84,15 @@ export AZURE_OPENAI_DEPLOYMENT_NAME="chat"
 
 1. Clone the repository.
 2. Open your terminal to the repo folder.
-3. Run the environment variable commands from Step 2.
-4. Follow the `README.md` to install dependencies in a virtual environment (`venv`) and run the agent script (`python main.py`).
+3. Run the environment variable commands from [Step 2](#2-configure-environment-variables).
+4. Create a new virtual environment in the project folder: `python -m venv .venv`
+5. Activate the virtual environment.
+    1. On Windows: `.\.venv\Scripts\activate`
+    1. On Linux/macOS: `source .venv/bin/activate`
+6. Install required packages: `pip install -r requirements.txt`
+7. Run the code: `python main.py`
+
+Refer to the [project `README`](https://github.com/paulyuk/simple-agent-af-python/blob/main/README.md) for additional details.
 
 **Option 2: C# / .NET**
 
@@ -93,7 +100,7 @@ export AZURE_OPENAI_DEPLOYMENT_NAME="chat"
 
 1. Clone the repository.
 2. Open your terminal to the repo folder.
-3. Run the environment variable commands from Step 2.
+3. Run the environment variable commands from [Step 2](#2-configure-environment-variables).
 4. Follow the `README.md` to run the app (`dotnet run`).
 
 You will know the agent is running successfully if you can have it answer your questions in the terminal.
@@ -109,3 +116,21 @@ You will know the agent is running successfully if you can have it answer your q
    * **Model:** Select `gpt-4.1-mini` from the dropdown. *If no model is listed, click "Connect & deploy" to add one named `gpt-4.1-mini`.*
    * **Instructions:** Type a simple system prompt (e.g., "You are a helpful project management assistant.").
 4. **Test:** Use the **Playground** chat window on the right to type a message and verify the response.
+
+#### 4. Configure the agent
+
+For the agent that you are using, modify the **instructions** in the code (or portal) to fit the scenario at hand (e.g., agent responsible for triaging customer support tickets). For example:
+
+```text
+You are a Microsoft Support bot responding to customer tweets on Twitter/X.
+
+When a customer tweets at @MicrosoftHelps, respond helpfully and professionally.
+
+The customer's tweet is: {{tweet}}
+
+Write a helpful response.
+```
+
+## Phase 3: Build the frontend
+
+With the agent available, we can now start working on a frontend that will allow us to _evaluate_ the performance of the agent.
