@@ -47,19 +47,16 @@ Before running code, you need two values from your Azure/Foundry settings:
 
 The endpoint we want for Agent Framework is the Azure OpenAI one.
 
-It's the Foundry project resource, overview (old portal):
-
-<img width="2006" height="1470" alt="image" src="https://gist.github.com/user-attachments/assets/f009694f-01c4-4e8c-aa39-660448187072" />
-
-Click on the **Azure OpenAI** tab.  Get this endpoint.  It should not have a route.
-
-<img width="1009" height="728" alt="image" src="https://gist.github.com/user-attachments/assets/f1eedff4-aac5-4f96-ab9a-f3e806990e12" />
+![Selecting the OpenAI endpoint](./media/endpoint.gif)
 
 E.g. a valid endpoint looks like:
 
 ```shell
 https://agent-ai-servicesou6taoycpkkwc.openai.azure.com/
 ```
+
+>[!IMPORTANT]
+>Make sure that you are **not using** the _New Foundry_ portal to quickly get the Azure OpenAI endpoint.
 
 #### 2. Configure Environment Variables
 
