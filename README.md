@@ -24,6 +24,8 @@ These are the simplest instructions for creating a project and running an AI Age
 
 4. **Deploy:** Click **Review + Create**, then **Create**
 
+You can also obtain the principal ID from the Microsoft Azure Portal - navigate to **Microsoft Entra ID**, followed by **Users** and find your identity.
+
 >[!IMPORTANT]
 >Make sure that you are selecting an Azure subscription you have write access to.
 
